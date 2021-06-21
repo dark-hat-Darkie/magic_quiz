@@ -1,10 +1,8 @@
 import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
 
 const Question = ({ques}) => {
 
-  const { question, options, a } = ques;
+  const { question, options} = ques;
 
   const renderedOptions = options.map(opt => {
     return (

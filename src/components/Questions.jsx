@@ -18,7 +18,7 @@ const Questions = props => {
     e.preventDefault();
     props.hSubmit();
     window.scrollTo(0, 0);
-    props.st.questions.map(question => {
+    props.st.questions.forEach(question => {
       if(question.answer === answers[question.question]){
         p++;
       }

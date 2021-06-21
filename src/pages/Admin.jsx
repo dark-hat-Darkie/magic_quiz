@@ -23,7 +23,7 @@ const Admin = props => {
     if(props.st.user === 'user'){
       history.push('./answers')
     }
-  }, [])
+  }, [props.st.user, history])
 
   const onUpdate = (e, question) => {
     e.preventDefault();

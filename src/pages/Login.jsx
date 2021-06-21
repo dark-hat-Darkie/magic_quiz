@@ -9,7 +9,6 @@ const Login = props => {
 
   const [userName, setUserName] = useState('');
   const [passWord, setPassWord] = useState('');
-  const [error, setError] = useState('');
 
   const onSubmitHandle = (e) => {
     e.preventDefault();
@@ -29,7 +28,7 @@ const Login = props => {
     <div class="w-full h-screen flex items-center justify-center">
         <form class="w-full md:w-1/3 bg-white rounded-lg" onSubmit={(e) => onSubmitHandle(e)}>
             <div class="flex font-bold justify-center mt-6">
-                <img class="h-20 w-20"
+                <img class="h-20 w-20" alt="logo"
                     src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/avatar.svg"/>
             </div>
             <h2 class="text-3xl text-center text-gray-700 mb-4">Login To MagicQuiz!</h2>
